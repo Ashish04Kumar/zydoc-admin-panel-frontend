@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+@theme {
+  --color-primary: #5f6fff;
+  --color-secondary: #9333ea;
+  --font-body: ui-sans-serif, system-ui, sans-serif;
+  --grid-cols-auto: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+* {
+  /* font-family: Outift; */
+}
+.active hr {
+  @apply block;
+}
+
+@utility grid-cols-auto {
+  grid-template-columns: var(--grid-cols-auto);
+}
+
+@media (max-width: 740px) {
+  .active p {
+    @apply text-white bg-primary;
+  }
+}
+
+
+/* ::-webkit-scrollbar{
+  @apply hidden
+} */
+
+
+*{
+  font-family: Outfit;
+}
